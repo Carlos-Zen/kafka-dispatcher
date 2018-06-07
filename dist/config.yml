@@ -1,0 +1,16 @@
+#
+# Kafka command dispatcher
+#
+# Instruction for several config
+# topics: A comma-separated list of topics to consume
+# zookeeper: A comma-separated Zookeeper connection string
+# command: (e.g. ·/usr/bin/php·)
+# params: (e.g. ·/data/shell/test.php·)
+#
+consumer_group : test
+topics : raw_active
+zookeeper : 10.6.30.197:2181,10.6.30.198:2181,10.6.30.199:2181
+command : /app/bin/php
+params : /data/html/newapipool.youzu.com/index.php
+process_number : 200
+buff_number : 200
