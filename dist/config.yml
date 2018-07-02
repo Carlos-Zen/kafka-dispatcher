@@ -8,8 +8,8 @@
 # params: (e.g. ·/data/shell/test.php·)
 #
 consumer_group : test
-topics : raw_active
-zookeeper : 10.6.30.197:2181,10.6.30.198:2181,10.6.30.199:2181
+topics : raw_click,raw_complete,raw_effect,raw_install,raw_level,raw_load,raw_login,raw_open,raw_recharge,raw_register,raw_sub_active,raw_sub_effect,raw_sub_exit,raw_sub_install,raw_sub_level,raw_sub_login,raw_sub_open,raw_ad_click,raw_ad_view,raw_app_click,raw_click_login,raw_click_register,raw_exit,raw_materiel-click,raw_other,raw_recall-click,raw_ulink_click,raw_view,raw_web_login
+zookeeper : 10.21.32.226:2181,10.21.32.65:2181,10.21.32.127:2181
 command : /app/bin/php
 params : /data/html/newapipool.youzu.com/index.php
 process_number : 200
