@@ -47,9 +47,9 @@ func (cgc *Config) Validate() error {
 		return sarama.ConfigurationError("CommitInterval should have a duration >= 0")
 	}
 
-	if cgc.Offsets.Initial != sarama.OffsetOldest && cgc.Offsets.Initial != sarama.OffsetNewest {
-		return errors.New("Offsets.Initial should be sarama.OffsetOldest or sarama.OffsetNewest.")
-	}
+	//if cgc.Offsets.Initial != sarama.OffsetOldest && cgc.Offsets.Initial != sarama.OffsetNewest {
+	//	return errors.New("Offsets.Initial should be sarama.OffsetOldest or sarama.OffsetNewest.")
+	//}
 
 	if cgc.Config != nil {
 		if err := cgc.Config.Validate(); err != nil {

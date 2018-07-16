@@ -14,3 +14,4 @@ command : /app/bin/php
 params : /data/html/newapipool.youzu.com/index.php
 process_number : 200
 buff_number : 200
+log_path : /var/log/kafka.log

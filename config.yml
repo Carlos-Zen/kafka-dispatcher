@@ -7,10 +7,11 @@
 # command: (e.g. ·/usr/bin/php·)
 # params: (e.g. ·/data/shell/test.php·)
 #
-consumer_group : test
-topics : raw_active
-zookeeper : 10.6.30.197:2181,10.6.30.198:2181,10.6.30.199:2181
+consumer_group : local
+topics : raw_click
+zookeeper : 10.21.32.226:2181,10.21.32.65:2181,10.21.32.127:2181
 command : php
 params : e:\t.php
-process_number : 100
+process_number : 10
 buff_number : 200
+#log_path : e:\kafka.log
